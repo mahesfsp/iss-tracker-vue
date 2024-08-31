@@ -20,6 +20,7 @@ export default {
     const positions = ref([]); // Reactive reference to hold ISS positions
 
     const fetchISSPosition = () => {
+      
       axios
         .get("http://api.open-notify.org/iss-now.json")
         .then((response) => {
