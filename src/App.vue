@@ -21,7 +21,7 @@ export default {
 
     const fetchISSPosition = () => {
       axios
-        .get("https://api.open-notify.org/iss-now.json")
+        .get("http://api.open-notify.org/iss-now.json")
         .then((response) => {
           positions.value.push(response.data.iss_position); // Push new position to the array
         })
